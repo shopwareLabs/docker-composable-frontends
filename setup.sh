@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script is used to setup the environment for the project.
+mkdir -p src
 cd src
 
 # check if package.json exists and create repo only when it does not exist
@@ -10,7 +11,8 @@ fi
 
 cd ../
 
+export DOCKER_USER="$(id -u):$(id -g)"
 
-docker-compose up --build -d --remove-orphans
-docker-coompose stop
-docker-compose up -d
+docker compose up --build -d --remove-orphans
+docker compose stop
+docker compose up -d
