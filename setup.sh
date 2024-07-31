@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script is used to setup the environment for the project.
-cd src
+mkdir -p src && cd src
 
 # check if package.json exists and create repo only when it does not exist
 if [ ! -f package.json ]; then
