@@ -12,5 +12,5 @@ cd ../
 
 
 docker-compose up --build -d --remove-orphans
-docker-coompose stop
+docker-compose stop
 docker-compose up -d
