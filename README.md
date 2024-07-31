@@ -13,8 +13,9 @@ The frontend is running in a development mode, so you can change the code and se
 1. Clone the repository
 2. Run `sh setup.sh`
 3. Check with `docker ps` if the containers are running
-4. Open your browser and go to `http://127.0.0.1/`
-5. You should see the Demo-Store from Composable Frontends
+4. If it is not starting just run `docker-compose up` again and check the logs
+5. Open your browser and go to `http://127.0.0.1/`
+6You should see the Demo-Store from Composable Frontends
 
 ## How to run after set up?
 Just `docker-compose up` (in foreground) or `docker-compose up -d` (in background)
