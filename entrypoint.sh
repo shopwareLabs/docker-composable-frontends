@@ -13,6 +13,7 @@ cd /app
 
 # Install dependencies if node_modules is missing
 rm -rf pnpm-lock.yaml
+pnpm -v
 pnpm install --dev --no-frozen-lockfile --no-optional
 pnpm add nuxi
 
