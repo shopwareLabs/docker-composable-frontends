@@ -7,9 +7,6 @@ services:
     working_dir: /app
     volumes:
       - ./src:/app
-      - /app/node_modules
-      - /app/.nuxt
-      - /app/.output
       - static-content:/app/.output
     tmpfs:
       - /tmp
@@ -17,6 +14,12 @@ services:
       - "3000:3000"
     networks:
       - app-network
+    user: ${DOCKER_USER}
+    healthcheck: 
+      test: "curl -f http://localhost:3000"
+      interval: 15s
+      timeout: 1m
+      retries: 10
 
   nginx:
     image: nginx:latest
