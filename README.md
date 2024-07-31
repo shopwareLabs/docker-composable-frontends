@@ -12,11 +12,8 @@ The frontend is running in a development mode, so you can change the code and se
 ## How to set up?
 1. Clone the repository
 2. Run `sh setup.sh`
-3. Check with `docker ps` if the containers are running
-4. Open your browser and go to `http://127.0.0.1/`
-5. I see a 502 Bad Gateway on the page
-6. Execute `docker-compose up` again
-7. Refresh your Browser now you should see the Demo-Store from Composable Frontends
+3. Open your browser and go to `http://127.0.0.1/`
+4. Refresh your Browser now you should see the Demo-Store from Composable Frontends
 
 ## How to run after set up?
 Just `docker-compose up` (in foreground) or `docker-compose up -d` (in background)
