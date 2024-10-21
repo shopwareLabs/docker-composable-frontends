@@ -10,7 +10,6 @@ fi
 
 cd ../
 
-
-docker-compose up --build -d --remove-orphans
-docker-compose stop
-docker-compose up -d
+docker compose up --build -d --remove-orphans
+docker compose stop
+docker compose up -d
